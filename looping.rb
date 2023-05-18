@@ -22,7 +22,7 @@ def fizzbuzz(num)
   end
 end
 
-def fizzbuzz_printer
+def fizzbuzz_printer 
   # your code here
   (1..100).each do |num|
     puts fizzbuzz(num)
@@ -31,4 +31,9 @@ end
 
 def reverse_string(str)
   # your code here
+  reversed_str = ""
+  str.length.times do |i|
+    reversed_str = str[i] + reversed_str
+  end
+  reversed_str
 end
